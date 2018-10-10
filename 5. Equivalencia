@@ -1,0 +1,24 @@
+
+package pesosdolar;
+import java.util.Scanner;
+
+public class PesosDolar {
+
+    
+    public static void main(String[] args) {
+        
+        double canPes;
+        double canDol;
+        double equi;
+        Scanner lee = new Scanner (System.in);
+        System.out.println("Introduce la cantidad en pesos");
+        canPes = lee.nextDouble();
+        
+        System.out.println ("Cual es la unidad en Dolares");
+        canDol = lee.nextDouble();
+        
+        equi = canPes*canDol;
+        System.out.println ("La equivalencia en dólares es: " + equi); 
+        
+    }
+}
