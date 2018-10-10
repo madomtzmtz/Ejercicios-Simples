@@ -1,0 +1,27 @@
+
+package porcentaje;
+import java.util.Scanner;
+
+public class Porcentaje {
+
+   
+    public static void main(String[] args) {
+       int numHom;
+       int numMuj;
+       int porHom;
+       int porMuj;
+       int total;
+       
+       Scanner lee = new Scanner (System.in);
+       System.out.println("Introduce el número de Hombres: ");
+       numHom = lee.nextInt ();
+       System.out.println ("Introduce el número e Mujeres: ");
+       numMuj = lee.nextInt ();
+       total = numHom + numMuj;
+       System.out.println ("El total de Alumnos es: "+ total);
+       porHom = (numHom * 100)/total; 
+       System.out.println ("El porcentaje de Hombres es: "+ porHom + "%");
+       porMuj = (numMuj * 100)/total;
+       System.out.println ("El porcentaje de Mujeres es: "+porMuj + "%");
+    }
+}
