@@ -1,0 +1,17 @@
+
+package descuento;
+import java.util.Scanner;
+
+public class Descuento {
+
+    
+    public static void main(String[] args) {
+       Scanner lee = new Scanner (System.in); 
+       double totCom, desc, pagFin;
+       System.out.print ("Ingrese el total de la compra: ");
+       totCom = lee.nextDouble();
+       desc = 15*totCom/100;
+       pagFin = totCom - desc;
+       System.out.println("Deberá pagar Finalmente por su Compra: $" + pagFin);
+    }
+}
