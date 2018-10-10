@@ -1,0 +1,25 @@
+
+package calificacion;
+import java.util.Scanner;
+
+public class Calificacion {
+
+    
+    public static void main(String[] args) {
+        Scanner lee = new Scanner (System.in);
+        
+        double calFin;
+        double primExPa;
+        double segExPa;
+        double terExPa;
+        
+        System.out.println ("Introduce el primer examen Parcial");
+        primExPa = lee.nextDouble();
+        System.out.println ("Introduce el segundo examen parcial");
+        segExPa = lee.nextDouble();
+        System.out.println ("Introduce el tercer examen parcial");
+        terExPa = lee.nextDouble();
+        calFin= (primExPa + segExPa + terExPa)/3;
+       System.out.println ("Su calificación final en la materia de Algoritmos es: "+ calFin);
+    }
+}
