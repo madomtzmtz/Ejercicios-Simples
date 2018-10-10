@@ -1,0 +1,23 @@
+
+package cubo;
+import java.util.Scanner;
+
+public class Cubo {
+
+    
+    public static void main(String[] args) {
+        
+        int num;
+        int numCub;
+        
+        Scanner lee = new Scanner (System.in);
+        System.out.print ("Introduce el número:  ");
+        num = lee. nextInt();
+        
+        numCub = (num*num)*num;
+        System.out.println("El número " + num + " elevado al cubo es: " + numCub);
+        
+        
+        
+    }
+}
