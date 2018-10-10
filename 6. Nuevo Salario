@@ -1,0 +1,20 @@
+
+package sueldo;
+import java.util.Scanner;
+
+public class Sueldo {
+
+    
+    public static void main(String[] args) {
+        Scanner lee = new Scanner (System.in);
+        
+        int sal;
+        int incre;
+        int nuSal;
+       System.out.println ("Cúal es su salario");
+       sal = lee.nextInt();
+       incre = (25 * sal) / 100;
+       nuSal = sal + incre;
+       System.out.println ("Su nuevo Salario es: $" + nuSal);
+    }
+}
