@@ -1,0 +1,30 @@
+
+package peso;
+import java.util.Scanner;
+
+public class Peso {
+
+
+    public static void main(String[] args) {
+        Scanner lee = new Scanner (System.in);
+        
+        double pesoKil;
+        double gramos= 1000;
+        double libras= 0.45359;
+        double tonelaC = 907;
+        double toneladaL = 1016;
+        
+        System.out.print ("Ingresa el peso en kilos:  ");
+        pesoKil = lee.nextDouble();
+        
+        gramos = pesoKil*gramos;
+        System.out.println (pesoKil + " kilos " + " = " + gramos + " gramos");
+        libras = pesoKil*libras;
+        System.out.println (pesoKil + " kilos " + " = " + libras + " libras");
+        tonelaC = pesoKil*tonelaC;
+        System.out.println (pesoKil + " kilos " + " = " + tonelaC + " toneladas cortas");
+        toneladaL = pesoKil*toneladaL;
+        System.out.println (pesoKil + " kilos " +  " = " + toneladaL + " toneladas largas");
+       
+    }
+}
