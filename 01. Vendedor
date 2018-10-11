@@ -1,26 +1,25 @@
 
-package vendedor;
+package sueldo;
 import java.util.Scanner;
 
-public class Vendedor {
+public class Sueldo {
 
-    
     public static void main(String[] args) {
-        Scanner lee = new Scanner (System.in);
-        double suelB;
-        double numVent;
-        double extCom;
-        double total;
-        System.out.println(" Ingrese su sueldo base: ");
-        suelB = lee.nextInt();
-        System.out.println(" Ingrese el nùmero de ventas en el mes: ");
-        numVent = lee.nextInt();
-        
-        extCom = (10*suelB/100)* numVent;
-        System.out.println("Usted Obtendra por concepto de Comisiones: $" + extCom );
-        
-        total = suelB + extCom;
-        System.out.println("Tomando en cuenta su sueldo base y comisiones, Obtendra un total de: $"+ total);
-       
+        System.out.println("Ingresa tu sueldo base");
+        Scanner lee = new Scanner(System.in);
+        int sueldoBase = lee.nextInt();
+        System.out.println("¿Cuantas ventas tuviste en el mes?");
+        int noVentas = lee.nextInt();
+        int suma=0;
+        for(int i=1; i<= noVentas; i++){
+            System.out.println("cual es el valor de tu venta "+i);
+            int venta =lee.nextInt();
+            suma =suma + venta;
+        }
+        int comision =(10*suma)/100;
+        System.out.println("el tota de tu comision por el total de tus ventas es: "+comision);
+        int total = sueldoBase + comision;
+        System.out.println("En tu quincena recibiras: " + total);
     }
+    
 }
